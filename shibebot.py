@@ -4,8 +4,8 @@ import discord
 import os
 from discord.ext.commands import Bot, when_mentioned_or
 
-bot = Bot(command_prefix = when_mentioned_or(config.prefix),
-          description = config.description,
+bot = Bot(command_prefix=when_mentioned_or(config.prefix),
+          description=config.description,
           case_insensitive=True,
           activity=discord.Game(config.game))
 
